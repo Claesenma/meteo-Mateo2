@@ -8,7 +8,7 @@ on:
 
 jobs:
   runs-on: ubuntu-latest
-    env:
+   env:
       API_KEY: Hi
     steps:
       - name: Say Hello Mona its Monday
