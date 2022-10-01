@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  push:
+    branches: [ test_ci ]
+  
+  workflow_dispatch:
+
+jobs:
+  runs-on: ubuntu-latest
+    env:
+      API_KEY: Hi
+    steps:
+      - name: Say Hello Mona its Monday
+        run: echo "api_key is ${{ env.API_KEY }}"
