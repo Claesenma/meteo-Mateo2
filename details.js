@@ -1,5 +1,6 @@
 const queryString = window.location.search;
 console.log(queryString);
+console.log(process.env.API_KEY);
 
 const urlParams = new URLSearchParams(queryString);
 var dag = urlParams.get('dag')
