@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MeteoMateo</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="kaarten.css">
+    <meta name="google-site-verification" content="jdeuhsYKoDrVgCAPbXXmREoNKypc1-tM_X6BWJ63mwY" />
+  </head>
+  <body>
+    <ul class="social">
+      <li id="fr_click" class="button_lang">Français</li>
+      <li id="en_click" class="button_lang">English</li>
+      <li id="nl_click" class="button_lang">Nederlands</li>
+      <li id="sp_click" class="button_lang">Español</li>
+		</ul>
+
+    <ul class="social2">
+      <li id="C_btn" class="button_lang">°C</li>
+      <li id="F_btn" class="button_lang">°F</li>
+		</ul>
+
+    <hr>
+
+    <h1 class="p1 nl">De weerkaart van België<span id="p1"></span></h1>
+    <h1 class="p1 en">The weather map of Belgium<span id="p1"></span></h1>
+    <h1 class="p1 sp">Mapa meteorológico de Bélgica<span id="p1"></span></h1>
+    <h1 class="p1 fr">La carte météorologique de la Belgique<span id="p1"></span></h1>
+
+    <div id="scrollmenu2" class="scrollmenu2">
+      <a id="btn1" onclick="show_day_data(0)"></a>
+      <a id="btn2" onclick="show_day_data(1)"></a>
+      <a id="btn3" onclick="show_day_data(2)"></a>
+      <a id="btn4" onclick="show_day_data(3)"></a>
+      <a id="btn5" onclick="show_day_data(4)"></a>
+      <a id="btn6" onclick="show_day_data(5)"></a>
+      <a id="btn7" onclick="show_day_data(6)"></a>
+      <a id="btn8" onclick="show_day_data(7)"></a>
+      <a id="btn9" onclick="show_day_data(8)"></a>
+      <a id="btn10" onclick="show_day_data(9)"></a>
+      <a id="btn11" onclick="show_day_data(10)"></a>
+      <a id="btn12" onclick="show_day_data(11)"></a>
+      <a id="btn13" onclick="show_day_data(12)"></a>
+      <a id="btn14" onclick="show_day_data(13)"></a>
+      <a id="btn15" onclick="show_day_data(14)"></a>
+    </div>
+
+    <div class="div1">
+      <p class="title"><span id="title1"></span></p>
+      <img src="images/weerkaart.png" id="map-img" alt="kaart-België">
+      <img id="img1" class= "img">
+      <img id="img2" class= "img">
+      <img id="img3" class= "img">
+      <img id="img4" class= "img">
+      <img id="img5" class= "img">
+      <span id="span1" class="span"></span>
+      <span id="span2" class="span"></span>
+      <span id="span3" class="span"></span>
+      <span id="span4" class="span"></span>
+      <span id="span5" class="span"></span>
+    </div>
+
+    <div class="bottom-div">
+      <p class="title1">© 2022 Mateo Claesen.</p>
+
+      <p class="title2 nl">(gemaakt met de gegevens van "<a href="https://www.visualcrossing.com">www.visualcrossing.com</a>")</p>
+      <p class="title2 fr">(créé avec les données de "<a href="https://www.visualcrossing.com">www.visualcrossing.com</a>")</p>
+      <p class="title2 en">(made using the data from "<a href="https://www.visualcrossing.com">www.visualcrossing.com</a>")</p>
+      <p class="title2 sp">(creado con los datos de "<a href="https://www.visualcrossing.com">www.visualcrossing.com</a>")</p>
+    </div>
+
+    <div id="scrollmenu" class="scrollmenu">
+      <span class="title1 nl">Het weer</span>
+      <span class="title1 fr">La météo</span>
+      <span class="title1 en">The weather</span>
+      <span class="title1 sp">El clima</span>
+
+      <a id="home-btn1" href="#home">Home</a>
+
+      <a class="nl" id="today-btn1" href="">Vandaag</a>
+      <a class="fr" id="today-btn1" href="">Aujourd'hui</a>
+      <a class="en" id="today-btn1" href="">Today</a>
+      <a class="sp" id="today-btn1" href="">Hoy</a>
+
+      <a class="nl" id="maps-btn1" href="">Kaart van België</a>
+      <a class="fr" id="maps-btn1" href="">Carte de la Belgique</a>
+      <a class="en" id="maps-btn1" href="">Map of Belgium</a>
+      <a class="sp" id="maps-btn1" href="">Mapa de Belgica</a>
+    </div>
+
+    <script src="kaarten.js"></script>
+
+  </body>
+</html>
